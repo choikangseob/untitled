@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mabangjin</title>
+  <style>
+    #xByX {
+      border: 1px solid black;
+      width: 500px;
+      height: 500px;
+      border-collapse: collapse; /* 테이블 내부 셀 테두리 결합 */
+    }
+    td {
+      border: 1px solid black; /* 각 셀에 테두리 추가 */
+      width: 20%; /* 셀의 가로 크기 */
+      height: 20%; /* 셀의 세로 크기 */
+      text-align: center; /* 텍스트 가운데 정렬 */
+      vertical-align: middle; /* 텍스트 수직 가운데 정렬 */
+    }
+  </style>
+  <!-- jQuery CDN 추가 -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+<table id="xByX"></table>
+
+<script>
+  let str = '';
+  for (let i = 0; i < 5; i++) {
+    str += '<tr>';
+    for (let j = 0; j < 5; j++) {
+      str += `<td id="cell_${i}_${j}"></td>`; // 각 셀에 고유 ID 부여
+    }
+    str += '</tr>';
+  }
+  $('#xByX').append(str);
+
+  // 숫자를 채우기
+  let numberStart = 1; // 시작 숫자
+  let i=0;
+  let j=0;
+  let n=0;
+  let direct = 'e';
+  for(numberStart=1;numberStart<=25;) {
+    while(direct == 'e') {
+
+      $(`#cell_${i}_${j}`).text(numberStart++); // 각 셀에 숫자 채우기
+      j++;
+      if(j==(5-n)){
+        j--
+        direct='s';
+        i++;
+
+      }
+      break;
+    }
+    while(direct=='s'){
+      $(`#cell_${i}_${j}`).text(numberStart++); // 각 셀에 숫자 채우기
+      i++;
+      if(i==(5-n)){
+        i--;
+        direct='w';
+        j--;
+      }
+      break;
+    }
+    while(direct=='w'){
+      $(`#cell_${i}_${j}`).text(numberStart++); // 각 셀에 숫자 채우기
+      j--;
+      if(j==(n-1)){
+        j++;
+        direct='n';
+        i--;
+        n++;
+      }
+      break;
+    }
+    while(direct=='n'){
+      $(`#cell_${i}_${j}`).text(numberStart++); // 각 셀에 숫자 채우기
+      i--;
+      if(i==(n-1)){
+        i++;
+        direct='e';
+        j++
+      }
+      break;
+    }
+  }
+</script>
+</body>
+</html>
