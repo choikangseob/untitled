@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>change</title>
+</head>
+<body>
+
+  <input type="text" id="A" value="Yeahah">
+  <input type="text" id="B">
+  <button id="change">change</button>
+</body>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+  $('#change').on('click',function(){
+    if($('#A').val()!=''){
+      $('#B').val($('#A').val());
+      $('#A').val('')
+    }else{
+      $('#A').val($('#B').val());
+      $('#B').val('')
+    }
+  })
+</script>
+</html>
