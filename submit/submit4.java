@@ -1,8 +1,10 @@
+package submit;
+
 public class submit4 {
 
   public static void main(String[] args) {
     for (int i = 2; i <= 4; i++) {
-      boolean isPrime = true; 
+      boolean isPrime = true;
 
       for (int j = 2; j < i; j++) {
         if (i % j == 0) {
