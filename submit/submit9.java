@@ -1,3 +1,4 @@
+package submit;
 import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.Scanner;
@@ -5,9 +6,9 @@ import java.util.Scanner;
 public class submit9 {
 
   public static void main(String[] args) {
-    ArrayList<Integer> numbers = new ArrayList<>(); // 입력 받은 숫자를 저장할 리스트
-    HashSet<Integer> uniqueNums = new HashSet<>(); // 중복 없이 숫자를 저장할 셋
-    HashSet<Integer> duplicates = new HashSet<>(); // 중복된 숫자를 저장할 셋
+    ArrayList<Integer> numbers = new ArrayList<>();
+    HashSet<Integer> uniqueNums = new HashSet<>();
+    HashSet<Integer> duplicates = new HashSet<>();
 
     Scanner sc = new Scanner(System.in);
     System.out.println("입력할 숫자의 개수를 정하세요:");
@@ -27,7 +28,7 @@ public class submit9 {
 
     int sum = 0;
     for (int num : uniqueNums) {
-      if (!duplicates.contains(num)) {
+      if (!duplicates.contains(num)) { 
         sum += num;
       }
     }
