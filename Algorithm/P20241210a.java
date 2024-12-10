@@ -15,11 +15,7 @@ public class P20241210a {
     ArrayList<Integer> list2 = new ArrayList<Integer>();
 
     for(int i = 0 ; i < n ; i++){
-      System.out.println((i+1)+"번째 숫자를 입력하시오");
       list.add(sc.nextInt());
-      if(i==n){
-        System.out.println(n+"개를 다 입력했습니다");
-      }
     }
     System.out.println("입력한 수중 S번쨰부터 E번째까지의 수를 오름 차순 정렬 할건데 S,E를 입력하시오 S<E<=n입니다");
     System.out.println("S를 입력하시오");
