@@ -1,4 +1,4 @@
-package Algorithm;
+package Algorithm.december;
 
 import java.util.ArrayList;
 import java.util.Scanner;
