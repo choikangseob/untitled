@@ -9,37 +9,41 @@ public class P20241217 {
     Scanner sc = new Scanner(System.in);
     System.out.println("참여하는 사람 수를 정하시오 2<=N<=1,000");
     int n = sc.nextInt();
-
     int maxMoney = 0;
-    int maxDice = 0;
-    int countOfSameDice = 0;
-    int count = 0;
-    int Money = 0;
     System.out.println("사람수의 주사위 를 3개씩 입력하시오");
     for (int i = 1; i <= n; i++) {
-      for (int j = 1; j <= 3; j++) {
-        int dice = sc.nextInt();
-        countOfSameDice = dice;
-        if(dice>maxDice){
-          maxDice = dice;
-        }else if(maxDice == countOfSameDice){
-          count++;
-        }
+      int maxDice = 0;
+      int count = 0;
+
+      int dice1 = sc.nextInt();
+      int dice2 = sc.nextInt();
+      int dice3 = sc.nextInt();
+
+      maxDice = Math.max(maxDice, dice1);
+      maxDice = Math.max(maxDice, dice2);
+      maxDice = Math.max(maxDice, dice3);
+
+      if (dice1 == dice2 && dice1 == dice3) {
+        count = 3;
+      } else if (dice1 == dice2 || dice1 == dice3 || dice2 == dice3) {
+        count = 2;
+      } else {
+        count = 1;
       }
-      if(count==0){
-        maxMoney = maxDice * 100;
-      }else if (count==1){
-        maxMoney = 1000 + maxDice * 100;
-      }else if (count==2){
-        maxMoney = 10000 + maxDice * 1000;
+
+      int Money = 0;
+      if (count == 1) {
+        Money = maxDice * 100;
+      } else if (count == 2) {
+        Money = 1000 + maxDice * 100;
+      } else if (count == 3) {
+        Money = 10000 + maxDice * 1000;
       }
-      maxDice = 0;
-      count = 0;
-      countOfSameDice = 0;
-      if(maxMoney>Money){
-        Money = maxMoney;
+
+      if (Money > maxMoney) {
+        maxMoney = Money;
       }
     }
-    System.out.println("가장 많은 상금을 받는 사람의 상금은"+Money+"입니다");
+    System.out.println("가장 많은 상금을 받는 사람의 상금은"+maxMoney+"입니다");
   }
 }
