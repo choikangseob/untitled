@@ -18,7 +18,6 @@ public class P20241216 {
     for (int i = 0; i < n; i++) {
       list.add(sc.nextInt());
     }
-
     for (int i = 0; i < n; i++) {
       int num = list.get(i);
       while(num!=0) {
@@ -26,12 +25,10 @@ public class P20241216 {
         reversed = reversed*10 + digit;
 
         num = num/10;
-
       }
       list1.add(reversed);
       reversed = 0 ;
     }
-
     for(int i=0;i<list1.size();i++) {
       for (int j = 2; j <=list1.get(i) ; j++) {
 
