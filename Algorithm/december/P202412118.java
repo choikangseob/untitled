@@ -3,7 +3,7 @@ package Algorithm.december;
 import java.util.ArrayList;
 import java.util.Scanner;
 
-public class P202412128 {
+public class P202412118 {
 
   public static void main(String[] args) {
     Scanner sc = new Scanner(System.in);
