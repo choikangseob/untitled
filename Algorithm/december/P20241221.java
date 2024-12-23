@@ -27,13 +27,13 @@ public class P20241221 {
         break;
       }
 
-      for (m = m - 1, l = l; m <= (m + (l - 1)) / 2; m++, l--) {
+      for (m = m - 1, l = l-1; m <= (m + (l)) / 2; m++, l--) {
 
         int changeNumber = 0;
 
         changeNumber = list.get(m);
-        list.set(m, list.get(l - 1));
-        list.set(l - 1, changeNumber);
+        list.set(m, list.get(l));
+        list.set(l, changeNumber);
 
       }
     }
