@@ -17,7 +17,7 @@ public class P20241223 {
     System.out.println("N개의 원소를 입력하시오");
     for (int i = 0; i < n; i++) {
       list.add(sc.nextInt());
-      list2.add(list.get(i));
+    //  list2.add(list.get(i));
     }
     System.out.println("두번째 리스트의 크기M를 입력하시오");
     int m = sc.nextInt();
@@ -25,9 +25,59 @@ public class P20241223 {
     for (int i = 0; i < m; i++) {
       list1.add(sc.nextInt());
 
-      list2.add(list1.get(i));
+     // list2.add(list1.get(i));
     }
-    int min = list2.get(0);
+    int i = 0;
+    int j = 0;
+    int a = 0;
+    int b = 0;
+    int c = 0;
+    if(list.size()<=list1.size()){
+      a= list.size(); b=list1.size();
+    }else{
+      a= list1.size(); b=list.size();
+    }
+    while(true) {
+      if (list.get(i) <= list1.get(j)) {
+        list2.add(list.get(i));
+        i++;
+      } else {
+        list2.add(list1.get(j));
+        j++;
+      }
+      if(i>=a||j>=a) break;
+    }
+    if(i<j){
+      c=i;
+    }else if(j<i){
+      c=j;
+    }else{
+      c=i-1;
+    }
+    for(c=c;c<b;c++) {
+      if (list.size() < list1.size()) {
+        list2.add(list1.get(c));
+      } else if (list.size() > list1.size()) {
+        list2.add(list.get(c));
+      }else{
+        if(list.get(c)>=list1.get(c)){
+          list2.add(list.get(c));
+        }else{
+          list2.add(list1.get(c));
+        }
+      }
+    }
+    for(i=0;i<list2.size();i++){
+      System.out.println(list2.get(i));
+    }
+
+
+
+
+
+
+
+/*    int min = list2.get(0);
     int saveMinNumber = 0;
     int saveNumber = 0;
     for (int i = 0; i < list2.size(); i++) {
@@ -47,6 +97,6 @@ public class P20241223 {
     }
     for (int i = 0; i < list2.size(); i++) {
       System.out.println(list2.get(i));
-    }
+    }*/
   }
 }
