@@ -34,11 +34,11 @@ public class P20250105 {
      if(i+1>=n){
        break;
      }
-     if(arr[i]>arr[i+1]){
+/*     if(arr[i]>arr[i+1]){
        changeNum2 = arr[i];
        arr[i] = arr[i+1];
        arr[i+1] = changeNum2;
-     }
+     }*/
    }
    for (int i = 0; i < n; i++) {
      System.out.println(arr[i]);
