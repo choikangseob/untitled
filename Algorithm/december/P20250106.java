@@ -17,7 +17,7 @@ public class P20250106 {
     System.out.println("몇개로 맞출지 K를 정하시오 K는 1<=K<=10,000 입니다");
     int k = sc.nextInt();
 
-    int max  = arr[0];
+    int max = arr[0];
     for (int i = 1; i < arr.length; i++) {
       if (arr[i] > max) {
         max = arr[i];
@@ -26,26 +26,25 @@ public class P20250106 {
 
     int lt = 1;
     int rt = max;
-    boolean flag = true;
-    while(flag) {
+    int ans = 0;
+
+    while (lt <= rt) {
       int mid = (lt + rt) / 2;
 
       int sum = 0;
-
       for (int i = 0; i < arr.length; i++) {
-       sum += arr[i] / mid;
+        sum += arr[i] / mid;
 
 
-        if (sum > k) {
-          lt = mid+1;
-        } else if (sum < k) {
-          rt = mid - 1;
+        if (sum >= k) {
+          ans = mid;
+          lt = mid + 1;
+
         } else {
-          System.out.println(k + "개인 최대수는 " + mid + "입니다.");
-          flag = false;
+          rt = mid - 1;
         }
       }
     }
-
+    System.out.println(k + "개인 최대수는 " + ans + "입니다.");
   }
 }
