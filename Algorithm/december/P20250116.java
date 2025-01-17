@@ -1,7 +1,6 @@
 package Algorithm.december;
 
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.Scanner;
 
 public class P20250116 {
