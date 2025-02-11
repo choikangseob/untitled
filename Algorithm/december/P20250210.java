@@ -32,6 +32,10 @@ public class P20250210 {
         if (list.get(i - 1).equals("(")) {
           sum += stack;
         }
+
+        if(list.get(i - 1).equals(")")){
+          sum ++;
+        }
       }
     }
 
