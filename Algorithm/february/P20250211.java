@@ -21,8 +21,8 @@ public class P20250211 {
 
 
     public static String infixToPostfix(String expression){
-      Stack<Character> stack = new Stack<>();
-      StringBuilder result = new StringBuilder();
+      Stack<Character> stack = new Stack<>();// push 저장 ,, pop 빼기 ,,  peek엿보다
+      StringBuilder result = new StringBuilder();//문자열 변수를 계속 안만들고 쌓게 해주는 개념
 
       for(int i = 0; i < expression.length(); i++){
         char ch = expression.charAt(i);
@@ -38,6 +38,7 @@ public class P20250211 {
         else if(ch =='('){
           stack.push(ch);
         }else if(ch == ')'){
+          // )이 들어왔을때 ( 이 아니라면 계속 빼내고 그뒤에 ( 을 빼낸다
           while(!stack.isEmpty() && stack.peek() != '('){
             result.append(stack.pop());
           }
