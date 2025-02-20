@@ -28,8 +28,8 @@ public class P20250220 {
           }
         }
 
-        if (minKey != -1) {
-          map.remove(minKey);
+        if (maxKey != -1) {
+          map.remove(maxKey);
         }
 
         System.out.println(max);
