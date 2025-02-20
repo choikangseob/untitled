@@ -20,11 +20,11 @@ public class P20250220 {
         int key = sc.nextInt();
         map.put(key,n);
       } else if (n == 0 && !map.isEmpty()) {
-        int minKey = -1;
+        int maxKey = -1;
         for (Map.Entry<Integer, Integer> entry : map.entrySet()) {
           if (entry.getValue() > max) {
             max = entry.getValue();
-            minKey = entry.getKey();
+            maxKey = entry.getKey();
           }
         }
 
