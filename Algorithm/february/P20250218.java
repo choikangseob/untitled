@@ -2,7 +2,7 @@ package Algorithm.february;
 
 import java.util.HashMap;
 
-public class P202050218 {
+public class P20250218 {
   public static void main(String[] args) {
     String word1 = "AbaAeCe";
     String word2 = "baeeACA";
