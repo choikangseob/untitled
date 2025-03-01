@@ -15,6 +15,7 @@ public class P20250228 {
     arr = new int[M];
     DFS(0);
     System.out.println(count);
+    System.out.println("YES");
   }
 
   public static void DFS(int depth) {
