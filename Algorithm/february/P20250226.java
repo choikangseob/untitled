@@ -53,6 +53,7 @@ public class P20250226 {
       }
     }
     System.out.println(list.get(num));
+    System.out.println("YES");
     return list.get(num);
   }
 }
