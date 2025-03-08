@@ -13,6 +13,7 @@ public class P20250225 {
       arr[i] = sc.nextInt();
     }
     DFS(n,0,arr2,arr);
+    System.out.println("Clear");
   }
 
   public static void DFS(int n ,int v,int[] arr2,int[] arr){
