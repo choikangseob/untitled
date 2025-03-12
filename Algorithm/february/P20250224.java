@@ -9,6 +9,7 @@ public class P20250224 {
     int n = sc.nextInt();
     int[] ch = new int[n+1];
     DFS(n,ch,1);
+    System.out.println("Clear");
   }
 
   public static void DFS(int n,int[] ch,int v){
