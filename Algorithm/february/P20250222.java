@@ -4,7 +4,7 @@ public class P20250222 {
   public static void main(String[] args) {
   int n = 1;
   DFS(n);
-
+    System.out.println("Clear");
   }
 
   public static void DFS(int n){
