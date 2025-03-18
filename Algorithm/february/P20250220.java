@@ -40,5 +40,6 @@ public class P20250220 {
 
 
     }
+    System.out.println("Clear");
   }
 }
