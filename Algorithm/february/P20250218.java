@@ -7,6 +7,7 @@ public class P20250218 {
     String word1 = "AbaAeCe";
     String word2 = "baeeACA";
     System.out.println(anagram(word1, word2));
+    System.out.println("Clear");
   }
 
   public static boolean anagram(String word1, String word2) {
