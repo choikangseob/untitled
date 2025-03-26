@@ -23,5 +23,6 @@ public class P20250217 {
       }
     }
     System.out.println(map);
+    System.out.println("Clear");
   }
 }
