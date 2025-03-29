@@ -42,5 +42,6 @@ public class P20250215 {
         System.out.println("NO");
       }
       }
+    System.out.println("Clear");
     }
 }
