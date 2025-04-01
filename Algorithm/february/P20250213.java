@@ -20,5 +20,6 @@ public class P20250213 {
       q.poll();
     }
     System.out.println(q.peek());
+    System.out.println("Clear");
     }
 }
