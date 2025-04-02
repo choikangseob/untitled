@@ -58,5 +58,6 @@ public class P20250212 {
     String expression = "3 5 2 + * 9 - ";
     int result = evaluatePostfix(expression);
     System.out.println("Result: " + result);
+    System.out.println("Clear");
   }
 }
