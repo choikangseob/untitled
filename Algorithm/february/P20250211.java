@@ -8,6 +8,7 @@ public class P20250211 {
     String expression = "3+5*2/(7-2)";
     String postfix = infixToPostfix(expression);
     System.out.println(postfix);
+    System.out.println("Clear");
   }
 
     private static int precedence(char operator) {
