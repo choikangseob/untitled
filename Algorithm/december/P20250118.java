@@ -43,6 +43,6 @@ public class P20250118 {
     }
 
 
-
+    System.out.println("Clear");
   }
 }
