@@ -81,6 +81,7 @@ public class P20250116 {
 
     System.out.println(count);
     System.out.println(str);
+    System.out.println("Clear");
   }
 
   public static ArrayList<Integer> pop(ArrayList<Integer> list, int k) {
