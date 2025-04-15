@@ -21,5 +21,6 @@ public class P20250111 {
     }
     sort(arr);
     System.out.println(arr[n-1]-arr[0]);
+    System.out.println("Clear");
   }
 }
