@@ -34,5 +34,6 @@ public class P20250109 {
   }
 
   System.out.println(count);
+    System.out.println("Clear");
   }
 }
