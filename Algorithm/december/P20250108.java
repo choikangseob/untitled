@@ -44,6 +44,7 @@ public class P20250108 {
       }
     }
     System.out.println(result);
+    System.out.println("Clear");
   }
 
   public static boolean func(int[] arr, int c, int limit) {
