@@ -38,6 +38,7 @@ public class P20250107 {
       }
     }
     System.out.println(result);
+    System.out.println("Clear");
 
 
 
