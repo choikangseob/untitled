@@ -46,5 +46,6 @@ public class P20250106 {
       }
     }
     System.out.println(k + "개인 최대수는 " + ans + "입니다.");
+    System.out.println("Clear");
   }
 }
