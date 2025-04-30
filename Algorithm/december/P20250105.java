@@ -47,5 +47,6 @@ public class P20250105 {
        break;
      }
    }
+    System.out.println("Clear");
   }
 }
