@@ -32,5 +32,6 @@ public class P20250104 {
       }
     }
     System.out.println("길이 5짜리 회문수는"+count+"개 입니다.");
+    System.out.println("Clear");
   }
 }
