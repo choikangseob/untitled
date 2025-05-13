@@ -1,5 +1,7 @@
 package Algorithm.december;
 
+import org.w3c.dom.ls.LSOutput;
+
 import java.util.Scanner;
 
 public class P20250103 {
@@ -118,5 +120,7 @@ public class P20250103 {
     }else{
       System.out.println("no");
     }
+    System.out.println("Clear");
   }
+
 }
