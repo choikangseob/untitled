@@ -47,5 +47,6 @@ public class P20241229 {
       }
     }
     System.out.println(count);
+    System.out.println("Clear");
   }
 }
