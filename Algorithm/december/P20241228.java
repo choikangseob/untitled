@@ -55,5 +55,6 @@ public class P20241228 {
       e++;
     }
     System.out.println(sum);
+    System.out.println("Clear");
   }
 }
