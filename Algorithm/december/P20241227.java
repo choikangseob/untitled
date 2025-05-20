@@ -31,5 +31,6 @@ public class P20241227 {
       }
 
     System.out.println(sum);
+    System.out.println("Clear");
   }
 }
