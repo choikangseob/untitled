@@ -42,6 +42,7 @@ public class P20241226 {
       sum1 = 0;
     }
     System.out.println("최대합은"+maxSum+"입니다");
+    System.out.println("Clear");
   }
 
 }
