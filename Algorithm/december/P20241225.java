@@ -36,6 +36,7 @@ public class P20241225 {
     }
 
     System.out.println("합이 " + m + "이 되는 부분 수열의 개수는 " + count + "개 입니다");
+    System.out.println("Clear");
   }
 }
 
