@@ -70,7 +70,7 @@ public class P20241223 {
     for(i=0;i<list2.size();i++){
       System.out.println(list2.get(i));
     }
-
+    System.out.println("Clear");
 
 
 
