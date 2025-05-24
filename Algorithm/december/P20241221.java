@@ -40,5 +40,6 @@ public class P20241221 {
     for (int i = 0; i < n; i++) {
       System.out.print(list.get(i));
     }
+    System.out.println("Clear");
   }
 }
