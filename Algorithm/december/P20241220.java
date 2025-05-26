@@ -38,5 +38,6 @@ public class P20241220 {
     }
 
     System.out.println("추출된 자연수는"+combinationNumber+"이고"+combinationNumber+"의 약수의 개수는"+count+"개입니다");
+    System.out.println("Clear");
   }
 }
