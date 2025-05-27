@@ -25,5 +25,6 @@ public class P20241219 {
         System.out.println("#"+(i+1)+"NO");
       }
     }
+    System.out.println("Clear");
   }
 }
